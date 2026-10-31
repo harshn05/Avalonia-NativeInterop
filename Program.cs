@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using Avalonia;
 using Avalonia.Controls;
@@ -59,8 +59,8 @@ public class MainWindow : Window
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
         // UI Control Initialization
-        _inputA = new TextBox { Watermark = "Enter Number A", Width = 150 };
-        _inputB = new TextBox { Watermark = "Enter Number B", Width = 150 };
+        _inputA = new TextBox { PlaceholderText = "Enter Number A", Width = 150 };
+        _inputB = new TextBox { PlaceholderText = "Enter Number B", Width = 150 };
         
         var calcButton = new Button { Content = "Calculate via C++", Padding = new Thickness(10, 5) };
         calcButton.Click += OnCalculateClick;
